@@ -1,0 +1,40 @@
+{
+  "name": "vuerination-server",
+  "version": "1.0.0",
+  "description": "vuerination node server",
+  "main": "app.js",
+  "scripts": {
+    "build": "babel --presets @babel/preset-env -d lib/ src",
+    "dev": "nodemon --exec babel-node src/app.js",
+    "start": "node lib/app.js",
+    "startProd": "node lib/app.js"
+  },
+  "author": "Alex Cushing",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/node": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "apollo-server-express": "^2.9.12",
+    "axios": "^0.19.2",
+    "babel-preset-env": "^1.7.0",
+    "bcrypt": "^3.0.7",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.0.0",
+    "mongoose": "^5.0.15",
+    "mongoose-type-email": "^1.0.11",
+    "morgan": "^1.9.0",
+    "nodemon": "^2.0.2",
+    "regenerator-runtime": "^0.13.3"
+  },
+  "engines": {
+    "node": "10.15.1",
+    "npm": "6.8.0"
+  }
+}
